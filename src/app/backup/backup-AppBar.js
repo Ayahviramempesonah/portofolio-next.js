@@ -12,9 +12,9 @@ const AppBar = () => {
 
   useEffect(() => {
     fetch('https://fakestoreapi.com/products')
-  .then(response => response.json())
-  .then(data => setProducts(data))
-  .catch(error => console.error(error));
+   .then(response => response.json())
+   .then(data => setProducts(data))
+   .catch(error => console.error(error));
   }, []);
 
   const handleSearch = (e) => {
@@ -25,7 +25,7 @@ const AppBar = () => {
 
   return (
     <div>
-      <nav className="bg-gray-800 text-white py-4 fixed top-0 left-0 w-full" style={{ zIndex: 1000 }}>
+      <nav className="bg-gray-800 text-white py-4">
         <div className="container mx-auto flex justify-between items-center">
           <Link href="/" className="text-lg font-bold">Logo</Link>
           <form onSubmit={handleSearch} className="flex items-center">
@@ -53,23 +53,21 @@ const AppBar = () => {
           </ul> */}
         </div>
       </nav>
-      <div style={{ paddingTop: '64px' }}>
-        {searchResults.length > 0 && (
-          <div className="container mx-auto mt-4">
-            <h2 className="text-lg font-bold">Hasil Pencarian</h2>
-            <ul>
-              {searchResults.map(product => (
-                <li key={product.id} className="mb-4">
-                  <h3 className="text-lg font-bold">{product.title}</h3>
-                  <p className="text-sm">{product.description}</p>
-                  <p className="text-sm">Harga: {product.price}</p>
-                  <img src={product.image} alt={product.title} className="w-32 h-32 object-contain" />
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </div>
+      {searchResults.length > 0 && (
+        <div className="container mx-auto mt-4">
+          <h2 className="text-lg font-bold">Hasil Pencarian</h2>
+          <ul>
+            {searchResults.map(product => (
+              <li key={product.id} className="mb-4">
+                <h3 className="text-lg font-bold">{product.title}</h3>
+                <p className="text-sm">{product.description}</p>
+                <p className="text-sm">Harga: {product.price}</p>
+                <img src={product.image} alt={product.title} className="w-32 h-32 object-contain" />
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 };
