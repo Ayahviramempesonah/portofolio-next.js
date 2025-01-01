@@ -13,7 +13,7 @@ export default function Footer() {
               Twitter
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/Ayahviramempesonah/portofolio-next.js"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-400 text-sm md:text-base"
@@ -21,7 +21,7 @@ export default function Footer() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com"
+              href="www.linkedin.com/in/purnomo-sari-62a2b81b6"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-400 text-sm md:text-base"
