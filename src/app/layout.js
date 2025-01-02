@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Portolio App",
+  title: "Portofolio App",
   description: "Portofolio App menggunakan API FakeStore untuk menampilkan data"
 };
 
