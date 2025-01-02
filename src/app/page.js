@@ -25,8 +25,8 @@ export default async function HomePage() {
             gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))",
             gap: "20px",
             marginTop: "20px",
-            overflow:"hidden",
-            padding: "20px",
+            // overflow:"hidden",
+            // padding: "20px",
             
           }}
         >
@@ -46,7 +46,7 @@ export default async function HomePage() {
                   <img
                     src={product.image}
                     alt={product.title}
-                    style={{ width: "100%", height: "75px", objectFit: "contain" }}
+                    style={{ width: "100%", height: "100px", objectFit: "contain" }}
                   />
                   <h3 style={{ marginTop: "8px" ,overflow:"hidden"}}>{product.title}</h3>
                   <p> ${ product.price}</p>
