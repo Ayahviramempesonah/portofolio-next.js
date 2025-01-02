@@ -21,7 +21,7 @@ export default async function HomePage() {
           className="grid"
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))",
             gap: "20px",
           }}
         >
@@ -44,7 +44,7 @@ export default async function HomePage() {
                     style={{ width: "100%", height: "150px", objectFit: "contain" }}
                   />
                   <h3 style={{ marginTop: "8px" }}>{product.title}</h3>
-                  <p>${product.price}</p>
+                  <p> kk${ product.price}</p>
                 </div>
               </Link>
             </div>

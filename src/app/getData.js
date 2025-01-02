@@ -17,7 +17,7 @@ export default async function Page() {
                 className="w-full h-48 object-contain mb-4"
               />
               <h3 className="text-lg font-bold">{post.title}</h3>
-              <p className="text-gray-600">${post.price}</p>
+              <p className="text-gray-600">$ jj{post.price}</p>
             </div>
           </Link>
         </div>
