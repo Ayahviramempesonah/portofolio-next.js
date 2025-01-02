@@ -1,5 +1,4 @@
-import Link from "next/link";
-
+import Link from "next/link"; 
 export default async function Page() {
   const data = await fetch("https://fakestoreapi.com/products");
   const posts = await data.json();
