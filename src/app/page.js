@@ -20,9 +20,14 @@ export default async function HomePage() {
         <div
           className="grid"
           style={{
+            
             display: "grid",
             gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))",
             gap: "20px",
+            marginTop: "20px",
+            overflow:"hidden",
+            padding: "20px",
+            
           }}
         >
           {products.map((product) => (
@@ -43,8 +48,8 @@ export default async function HomePage() {
                     alt={product.title}
                     style={{ width: "100%", height: "75px", objectFit: "contain" }}
                   />
-                  <h3 style={{ marginTop: "8px" }}>{product.title}</h3>
-                  <p> kk${ product.price}</p>
+                  <h3 style={{ marginTop: "8px" ,overflow:"hidden"}}>{product.title}</h3>
+                  <p> ${ product.price}</p>
                 </div>
               </Link>
             </div>
