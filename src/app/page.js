@@ -41,7 +41,7 @@ export default async function HomePage() {
                   <img
                     src={product.image}
                     alt={product.title}
-                    style={{ width: "100%", height: "100px", objectFit: "contain" }}
+                    style={{ width: "100%", height: "75px", objectFit: "contain" }}
                   />
                   <h3 style={{ marginTop: "8px" }}>{product.title}</h3>
                   <p> kk${ product.price}</p>
